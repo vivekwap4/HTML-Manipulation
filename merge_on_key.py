@@ -1,7 +1,12 @@
-##This script merges multiple html and image files into a single html file##
-##Also converts images to their base64 encodings and appends the encodings in the src attribute of the <img> tag
-##The assumed scenario is that file names start with a common key but can differ after that. There could be multiple keys among multiple files##
-##Run from terminal/cmd, pass the address of folder containing all the files as the input##
+# This script merges multiple html and image files into a single html file
+# Also converts images to their base64 encodings and appends the encodings in the src attribute of the <img> tag
+# The assumed scenario is that file names start with a common key but can differ after that. There could be multiple keys among multiple files
+# Run from terminal/cmd, pass the address of folder containing all the files as the input
+
+# Example of files for this scenario:
+# key1001.html, key1002.html, key1003.jpg, key2001.html, key2002.jpg, key2003.html
+# Output files: key1.html, key2.html
+# The order of the content in the html will depend on how the initial files are named. The script will sort them alphabetically and then perform the merging
 
 from bs4 import BeautifulSoup
 from PIL import Image
