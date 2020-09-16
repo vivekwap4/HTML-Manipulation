@@ -5,7 +5,7 @@
 
 # Example of files for this scenario:
 # eg.html, eg1.html, eg3.jpg, eg2.html, eg4.jpg
-# Output file: new.html
+# Output file: new.html (With all the contents of eg.html, eg1.html, eg3.jpg, eg2.html, and eg4.jpg)
 # The order of the content in the html will depend on how the initial files are named. The script will sort them alphabetically and then perform the merging
 
 from bs4 import BeautifulSoup
