@@ -1,4 +1,4 @@
-# This script takes a folder with an html file and images as input. The images in the folder are used in the html img tags in 
+# This script takes a folder with an html file and images as input where the images in the folder are being used in the html img tags in 
 # the src attribute. The output is an html file with the base64 encoding of these images embedded in the img tags, so as to eliminate
 # dependency on the files.
 # Run using terminal/cmd and pass the address to the folder as input
